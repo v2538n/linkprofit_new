@@ -1,9 +1,9 @@
-$media_font-size: (992px: 19px, 768px: 18px, 576px: 17px, 450px: 16px, 350px: 15px)
+/*$media_font-size: (992px: 19px, 768px: 18px, 576px: 17px, 450px: 16px, 350px: 15px)/*
 
-@each $media, $size in $media_font-size
+/*@each $media, $size in $media_font-size
 	@media screen and(max-width: $media)
 	 	html
-	 		font-size: $size
+	 		font-size: $size*/
 
 
 @media screen and(max-width: 1024px)
@@ -79,36 +79,14 @@ $media_font-size: (992px: 19px, 768px: 18px, 576px: 17px, 450px: 16px, 350px: 15
 		&__item:last-child
 			margin-bottom: 0
 
-	.section-1
-		.block-left__criteria-item
-			font-size: 1rem
-
-		.block-right__info-title
-			font-size: 15px
-
-		.block-right__info-value
-			font-size: 14px
-
 	.section-3
 		height: 80px
-
-	.section-3 .section-3__text
-		font-size: 1rem	
 	
 	.footer-inner
 		padding: 18px 20px
 
-	.footer__text
-		font-size: 1rem
-		line-height: 1.6rem
 
 @media screen and(max-width: 450px)
-	.header-heading
-		font-size: (44 / $fz) + rem
-		line-height: (44 / $fz) + rem
-		
-		span 
-			font-size: (38.5 / $fz) + rem
 
 	.header-navigation__item
 		a
@@ -126,28 +104,3 @@ $media_font-size: (992px: 19px, 768px: 18px, 576px: 17px, 450px: 16px, 350px: 15
 
 		.block-right
 			padding: 40px 1.2rem
-
-			&__heading
-				font-size: 1.4rem
-
-	.footer__text
-		font-size: .9rem
-		line-height: 1.4rem
-
-@media screen and(max-width: 375px)
-	.section-1
-		.block-right
-			&__heading
-				font-size: 1.2rem
-
-	.section-3 .section-3__text
-		font-size: .9rem
-
-@media screen and(max-width: 320px)
-
-	.section-1
-		.block-right__info-title
-			font-size: 11px
-
-		.block-right__info-value
-			font-size: 11px

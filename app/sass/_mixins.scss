@@ -1,0 +1,10 @@
+@mixin adaptive-font($maxSize, $minSize) {
+	
+	font-size: $maxSize + px;
+	
+	$diffSize: $maxSize - $minSize;
+
+	@media screen and (max-width: 980px) {
+		font-size: calc(#{$minSize + px} + #{$diffSize} * ((100vw - 320px) / (990 - 320)));
+	}
+}
