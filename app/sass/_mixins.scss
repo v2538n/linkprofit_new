@@ -1,4 +1,4 @@
-@mixin adaptive-font($maxSize, $minSize) {
+@mixin font-size($maxSize, $minSize) {
 	
 	font-size: $maxSize + px;
 	
@@ -6,5 +6,60 @@
 
 	@media screen and (max-width: 980px) {
 		font-size: calc(#{$minSize + px} + #{$diffSize} * ((100vw - 320px) / (990 - 320)));
+	}
+}
+
+@mixin padding($maxValue, $minValue) {
+	
+	padding: $maxValue + px;
+	
+	$diffValue: $maxValue - $minValue;
+
+	@media screen and (max-width: 980px) {
+		padding: calc(#{$minValue + px} + #{$diffValue} * ((100vw - 320px) / (990 - 320)));
+	}
+}
+
+@mixin padding-left($maxValue, $minValue) {
+	
+	padding-left: $maxValue + px;
+	
+	$diffValue: $maxValue - $minValue;
+
+	@media screen and (max-width: 980px) {
+		padding-left: calc(#{$minValue + px} + #{$diffValue} * ((100vw - 320px) / (990 - 320)));
+	}
+}
+
+@mixin padding-right($maxValue, $minValue) {
+	
+	padding-right: $maxValue + px;
+	
+	$diffValue: $maxValue - $minValue;
+
+	@media screen and (max-width: 980px) {
+		padding-right: calc(#{$minValue + px} + #{$diffValue} * ((100vw - 320px) / (990 - 320)));
+	}
+}
+
+@mixin padding-top($maxValue, $minValue) {
+	
+	padding-top: $maxValue + px;
+	
+	$diffValue: $maxValue - $minValue;
+
+	@media screen and (max-width: 980px) {
+		padding-top: calc(#{$minValue + px} + #{$diffValue} * ((100vw - 320px) / (990 - 320)));
+	}
+}
+
+@mixin padding-bottom($maxValue, $minValue) {
+	
+	padding-bottom: $maxValue + px;
+	
+	$diffValue: $maxValue - $minValue;
+
+	@media screen and (max-width: 980px) {
+		padding-bottom: calc(#{$minValue + px} + #{$diffValue} * ((100vw - 320px) / (990 - 320)));
 	}
 }
